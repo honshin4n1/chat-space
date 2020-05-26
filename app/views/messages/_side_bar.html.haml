@@ -1,0 +1,34 @@
+%div.side-bar
+  %div.side-bar__header
+    %div.side-bar__header__box
+      %p.side-bar__header__box__user-name
+        honda
+      %ul.side-bar__header__box__icons
+        %li
+          = link_to "#" do
+            = icon('fa', 'edit', class:"side-bar__header__box__icons__edit")
+        %li    
+          = link_to "#" do
+            = icon('fa', 'cog', class:"side-bar__header__box__icons__new-group")
+
+  %div.side-bar__group-list
+    %div.group-list__box
+      %p.group-list__box__name
+        techcamp
+      %p.group-list__box__message
+        まだメッセージはありません
+    %div.group-list__box
+      %p.group-list__box__name
+        group2
+      %p.group-list__box__message
+        こんばんは！
+    %div.group-list__box
+      %p.group-list__box__name
+        group3
+      %p.group-list__box__message
+        いい天気だね
+    %div.group-list__box
+      %p.group-list__box__name
+        group4
+      %p.group-list__box__message
+        テストです       
