@@ -1,32 +1,31 @@
-%div.chat-main
-  %div.chat-main__header
-    %div.group-info
+.chat-main
+  .chat-main__header
+    .group-info
       %p.group-info__name
         groupname
       %p.group-info__member
         member : name 
-    = link_to "#", class:"chat-main__header__edit-btn" do
-      %div
-        Edit
-  %div.chat-main__messages
-    %div.message-box
-      %div.message-box__info
+    = link_to "#", class:"chat-main__header__edit-btn" do 
+      Edit
+  .chat-main__messages
+    .message-box
+      .message-box__info
         %p.message-box__info__name
           honda
         %p.message-box__info__date
           2020/5/25(Mon) 18:00:05
       %p.message-box__text
         こんばんは
-    %div.message-box
-      %div.message-box__info
+    .message-box
+      .message-box__info
         %p.message-box__info__name
           koko
         %p.message-box__info__date
           2020/5/26(Tue) 15:08:05
       %p.message-box__text
         こんにちは
-    %div.message-box
-      %div.message-box__info
+    .message-box
+      .message-box__info
         %p.message-box__info__name
           test
         %p.message-box__info__date
@@ -34,9 +33,9 @@
       %p.message-box__text
         今晩は    
  
-  %div.chat-main__message-form
+  .chat-main__message-form
     %form.new-message
-      %div.new-message__input-box
+      .new-message__input-box
         %input{type: "text", class: "new-message__input-box__text", placeholder: "type a message", }
         %label{class: "new-message__input-box__image"}
           = icon('fas', 'image')
