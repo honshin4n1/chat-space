@@ -2,10 +2,13 @@
   .chat-main__header
     .group-info
       %p.group-info__name
-        group.name
+        = @group.name
       %p.group-info__member
-        member : name 
-    = link_to "#", class:"chat-main__header__edit-btn" do 
+        Member : 
+        - @group.users.each do |user|
+          = user.name
+        
+    = link_to edit_group_path(@group), class:'chat-main__header__edit-btn' do
       Edit
   .chat-main__messages
     = render @messages
