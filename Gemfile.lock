@@ -248,7 +248,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   factory_bot_rails
-  faker (~> 2.8)
+  faker
   font-awesome-sass
   haml-rails
   jbuilder (~> 2.5)
