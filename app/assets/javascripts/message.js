@@ -51,12 +51,13 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.chat-main__messages').append(html);
-      $('.chat-main__messages').animate({ scrollTop: $('.chat-main__messages')[0].scrollHeight});
       $('form')[0].reset();
+      $('.chat-main__messages').animate({ scrollTop: $('.chat-main__messages')[0].scrollHeight});
       $('.new-message__submit-btn').prop('disabled', false);
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
+      $('.new-message__submit-btn').prop('disabled', false);
   })
  })
 });
