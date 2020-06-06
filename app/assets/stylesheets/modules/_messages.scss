@@ -51,6 +51,9 @@
       height: 100px;
       width: 100%;
       background-color: #2f3e51;
+      a {
+        text-decoration: none;
+      }
       &__name {
         width: calc(100% - 20px);
         padding-top: 20px;
